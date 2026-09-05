@@ -378,3 +378,69 @@
     }
   }
 })();
+
+// EQUILIBRIO AI
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("aiForm");
+  const input = document.getElementById("aiInput");
+  const messages = document.getElementById("aiMessages");
+  const sendButton = document.getElementById("aiSend");
+
+  if (!form || !input || !messages || !sendButton) return;
+
+  function addMessage(text, type) {
+    const div = document.createElement("div");
+    div.className = "ai-message " + type;
+    div.textContent = text;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const message = input.value.trim();
+
+    if (!message) return;
+
+    addMessage(message, "ai-message-user");
+
+    input.value = "";
+    sendButton.disabled = true;
+    sendButton.textContent = "Thinking...";
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message: message
+        })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "AI request failed");
+      }
+
+      addMessage(
+        data.reply || "No response received.",
+        "ai-message-bot"
+      );
+    } catch (error) {
+      console.error("Equilibrio AI error:", error);
+
+      addMessage(
+        "Sorry, Equilibrio AI is temporarily unavailable.",
+        "ai-message-bot"
+      );
+    } finally {
+      sendButton.disabled = false;
+      sendButton.textContent = "Send";
+      input.focus();
+    }
+  });
+});
