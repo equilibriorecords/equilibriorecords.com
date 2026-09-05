@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equilibrio Records</title>
+  <meta name="description" content="Equilibrio Records - Organic House, Progressive House and Deep House. Independent electronic music label.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Security / privacy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com; media-src 'self'; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googletagmanager.com; frame-src https://w.soundcloud.com https://widget.soundcloud.com https://soundcloud.com; worker-src 'none'; upgrade-insecure-requests;">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagen/logo.jpg" alt="Equilibrio Records">
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#listen" data-i18n="nav_listen">Listen</a>
+      <a href="#releases" data-i18n="nav_releases">Releases</a>
+      <a href="#sessions" data-i18n="nav_sessions">Sessions</a>
+      <a href="#artists" data-i18n="nav_artists">Artists</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <span class="lang-sep">|</span>
+      <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <video class="hero-bg" autoplay muted loop playsinline>
+      <source src="imagen/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero_eyebrow">INDEPENDENT ELECTRONIC MUSIC LABEL</p>
+
+      <img src="imagen/logo.jpg" alt="Equilibrio Records" class="hero-logo">
+
+      <p class="hero-text">
+        Organic House · Progressive House · Deep House
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#releases" class="btn btn-primary" data-i18n="hero_btn_releases">Explore Releases</a>
+        <a href="#sessions" class="btn btn-secondary" data-i18n="hero_btn_sessions">Watch Sessions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section fade-in" id="about">
+    <div class="section-number">01</div>
+
+    <div class="section-content">
+      <p class="section-label" data-i18n="about_label">ABOUT THE LABEL</p>
+
+      <div class="lotus" aria-hidden="true">
+        <svg viewBox="0 0 120 100" width="72" height="60">
+          <!-- center -->
+          <ellipse class="lotus-petal lotus-c" cx="60" cy="58" rx="10" ry="14"/>
+          <!-- inner petals -->
+          <ellipse class="lotus-petal" cx="60" cy="42" rx="9" ry="22" transform="rotate(0 60 58)"/>
+          <ellipse class="lotus-petal" cx="60" cy="42" rx="9" ry="22" transform="rotate(40 60 58)"/>
+          <ellipse class="lotus-petal" cx="60" cy="42" rx="9" ry="22" transform="rotate(-40 60 58)"/>
+          <ellipse class="lotus-petal" cx="60" cy="42" rx="9" ry="22" transform="rotate(80 60 58)"/>
+          <ellipse class="lotus-petal" cx="60" cy="42" rx="9" ry="22" transform="rotate(-80 60 58)"/>
+          <!-- outer petals -->
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(20 60 58)"/>
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(-20 60 58)"/>
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(60 60 58)"/>
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(-60 60 58)"/>
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(100 60 58)"/>
+          <ellipse class="lotus-petal lotus-outer" cx="60" cy="38" rx="11" ry="26" transform="rotate(-100 60 58)"/>
+        </svg>
+      </div>
+
+      <h2 data-i18n="about_title">Where opposites become one.</h2>
+
+      <p data-i18n="about_p1">
+        Music lives in the space between opposites.
+      </p>
+
+      <p data-i18n="about_p2">
+        Equilibrio Records is an independent electronic music label exploring Organic House, Progressive House, Deep House and Downtempo through a philosophy of balance.
+      </p>
+
+      <p data-i18n="about_p3">
+        Between light and darkness, rhythm and silence, nature and technology, emotion and movement, we create a space where artists can express their own identity.
+      </p>
+
+      <p data-i18n="about_p4">
+        More than a label, Equilibrio is a meeting point for music, energy and human connection.
+      </p>
+
+      <p data-i18n="about_p5">
+        Balance is not stillness. It is harmony in motion.
+      </p>
+    </div>
+  </section>
+
+  <!-- RELEASES -->
+
+  <!-- LISTEN -->
+  <section class="section dark-section fade-in" id="listen">
+    <div class="section-number">02</div>
+
+    <div class="section-content">
+      <p class="section-label" data-i18n="listen_label">LISTEN</p>
+      <h2 data-i18n="listen_title">Featured Track</h2>
+      <div class="eq-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p class="listen-intro" data-i18n="listen_intro">Featured releases from the catalog</p>
+
+      <div class="players-grid">
+        <div class="player-item">
+          <p class="player-label">Miguel Ante — Lovely Day [EQ060]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2379493574&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Solitary — Home (Unai Garcia Remix) [EQ58]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2351554796&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Hook Airs — Thunder Commander [EQ061]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2351549231%3Fsecret_token%3Ds-7Md2J0M0llN&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Delmoro (AR) — Rmc [EQ56]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2335626341&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Miguel Ante — Morning Dew (Mario Puccio Remix)</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2379493568&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Niko Garcia, Alain M. — City at Night</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2316066029&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">T.Picker, Fabson — Echoes of Frisia [EQ55]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2319022655&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="player-item">
+          <p class="player-label">Parlagreco — Hole (Deejaguar Remix) [EQ53]</p>
+          <div class="player-wrap">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" allow="autoplay; encrypted-media; fullscreen" title="SoundCloud player"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2303355923&color=%23c6a15b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section fade-in" id="releases">
+    <div class="section-number">03</div>
+
+    <div class="section-content">
+      <p class="section-label" data-i18n="catalog_label">CATALOG</p>
+      <h2 data-i18n="catalog_title">Latest Releases</h2>
+      <div class="eq-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+                  <div class="cards">
+        <a href="https://www.beatport.com/release/thunder-commander/6892827" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ061.jpg" alt="Thunder Commander - Hook Airs">
+            </div>
+            <div class="card-info">
+              <span>EQ061</span>
+              <h3>Thunder Commander</h3>
+              <p>Hook Airs</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/lovely-day/6876253" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ060.jpg" alt="Lovely Day - Miguel Ante">
+            </div>
+            <div class="card-info">
+              <span>EQ060</span>
+              <h3>Lovely Day</h3>
+              <p>Miguel Ante</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ059.jpg" alt="Divergent - Nina ID">
+            </div>
+            <div class="card-info">
+              <span>EQ59</span>
+              <h3>Divergent</h3>
+              <p>Nina ID</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ058.jpg" alt="Home - Solitary">
+            </div>
+            <div class="card-info">
+              <span>EQ58</span>
+              <h3>Home</h3>
+              <p>Solitary</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ57.jpg" alt="Khalili - KarlRussell">
+            </div>
+            <div class="card-info">
+              <span>EQ57</span>
+              <h3>Khalili</h3>
+              <p>KarlRussell</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ56.jpg" alt="Rmc - Delmoro (AR)">
+            </div>
+            <div class="card-info">
+              <span>EQ56</span>
+              <h3>Rmc</h3>
+              <p>Delmoro (AR)</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ55.jpg" alt="Echoes of Frisia - T.Picker & Fabson">
+            </div>
+            <div class="card-info">
+              <span>EQ55</span>
+              <h3>Echoes of Frisia</h3>
+              <p>T.Picker & Fabson</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/silent-lover/6411214" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ54.jpg" alt="Silent Lover - Dr Pius">
+            </div>
+            <div class="card-info">
+              <span>EQ54</span>
+              <h3>Silent Lover</h3>
+              <p>Dr Pius</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/hole/6441640" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ53.jpg" alt="Hole - Parlagreco">
+            </div>
+            <div class="card-info">
+              <span>EQ53</span>
+              <h3>Hole</h3>
+              <p>Parlagreco</p>
+            </div>
+          </article>
+        </a>
+
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ52.jpg" alt="City at Night - Niko Garcia & Alain M.">
+            </div>
+            <div class="card-info">
+              <span>EQ52</span>
+              <h3>City at Night</h3>
+              <p>Niko Garcia & Alain M.</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/hoi-an/5836038" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ51.jpg" alt="Hoi An - Bonsai (AR)">
+            </div>
+            <div class="card-info">
+              <span>EQ51</span>
+              <h3>Hoi An</h3>
+              <p>Bonsai (AR)</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/echoes-of-us/5863218" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ50.jpg" alt="Echoes of Us - Casnik">
+            </div>
+            <div class="card-info">
+              <span>EQ50</span>
+              <h3>Echoes of Us</h3>
+              <p>Casnik</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/down/5831651" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ49.jpg" alt="Down - Fleanger">
+            </div>
+            <div class="card-info">
+              <span>EQ49</span>
+              <h3>Down</h3>
+              <p>Fleanger</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/release/osireion/5842766" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQ48.jpg" alt="Osireion - Federico Monachesi">
+            </div>
+            <div class="card-info">
+              <span>EQ48</span>
+              <h3>Osireion</h3>
+              <p>Federico Monachesi</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <div class="card-image">
+              <img src="imagen/EQA01.jpg" alt="Into The Flow Vol.1 - Various Artists">
+            </div>
+            <div class="card-info">
+              <span>EA01</span>
+              <h3>Into The Flow Vol.1</h3>
+              <p>Various Artists</p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESSIONS -->
+  <section class="section fade-in" id="sessions">
+    <div class="section-number">04</div>
+
+    <div class="section-content">
+      <p class="section-label" data-i18n="sessions_label">EQUILIBRIO SESSIONS</p>
+      <h2 data-i18n="sessions_title">Artists. Music. Identity.</h2>
+
+      <p data-i18n="sessions_text">
+        Exclusive DJ sessions created by artists from the international
+        electronic music scene.
+      </p>
+
+      <div class="yt-row">
+        <span class="yt-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z"/>
+          </svg>
+        </span>
+        <a href="https://youtube.com/@equilibrio.records" class="text-link" target="_blank" rel="noopener noreferrer">
+          Visit our YouTube Channel →
+        </a>
+      </div>
+
+            <div class="session-cards">
+
+        <a href="https://www.youtube.com/watch?v=nYqp_PXqhcA" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session08.jpg" alt="Equilibrio Session 8 - Hook Airs">
+            </div>
+            <div class="session-info">
+              <span>SESSION #08</span>
+              <h3>Hook Airs</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Pu_2SEB4xSc" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session09.jpg" alt="Equilibrio Session 9 - Missfeat">
+            </div>
+            <div class="session-info">
+              <span>SESSION #09</span>
+              <h3>Missfeat</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=oFCCTXYkTFQ" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session10.jpg" alt="Equilibrio Session 10 - Mario Colasso">
+            </div>
+            <div class="session-info">
+              <span>SESSION #10</span>
+              <h3>Mario Colasso</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=GoldoiN7tT8" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session11.jpg" alt="Equilibrio Session 11 - Martin Bernini">
+            </div>
+            <div class="session-info">
+              <span>SESSION #11</span>
+              <h3>Martin Bernini</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=mCMj485z_MM" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session12.jpg" alt="Equilibrio Session 12 - Ignacio Salgado">
+            </div>
+            <div class="session-info">
+              <span>SESSION #12</span>
+              <h3>Ignacio Salgado</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+
+        <a href="https://www.youtube.com/watch?v=ohrxUYd0EgY" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session13.jpg" alt="Equilibrio Session 13 - Shaun Strudwick">
+            </div>
+            <div class="session-info">
+              <span>SESSION #13</span>
+              <h3>Shaun Strudwick</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=IpuEToKRs3c" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session14.jpg" alt="Equilibrio Session 14 - Sebas Garcia">
+            </div>
+            <div class="session-info">
+              <span>SESSION #14</span>
+              <h3>Sebas Garcia</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=NmEAbtmjB20" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session15.jpg" alt="Equilibrio Session 15 - Karl Russell">
+            </div>
+            <div class="session-info">
+              <span>SESSION #15</span>
+              <h3>Karl Russell</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=wvA3E0M0KAQ" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session16.jpg" alt="Equilibrio Session 16 - Parlagreco">
+            </div>
+            <div class="session-info">
+              <span>SESSION #16</span>
+              <h3>Parlagreco</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+
+
+        <a href="https://www.youtube.com/watch?v=45FpCSPShZY" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session17.jpg" alt="Equilibrio Session 17 - Iván Akselman">
+            </div>
+            <div class="session-info">
+              <span>SESSION #17</span>
+              <h3>Iván Akselman</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Wql7J4EPOb0" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session18.jpg" alt="Equilibrio Session 18 - Fleanger">
+            </div>
+            <div class="session-info">
+              <span>SESSION #18</span>
+              <h3>Fleanger</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=6N4fT9ENSbU" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session19.jpg" alt="Equilibrio Session 19 - Ivang">
+            </div>
+            <div class="session-info">
+              <span>SESSION #19</span>
+              <h3>Ivang</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://youtube.com/@equilibrio.records" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session20.jpg" alt="Equilibrio Session 20 - Arthur Davidson">
+            </div>
+            <div class="session-info">
+              <span>SESSION #20</span>
+              <h3>Arthur Davidson</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=45axkviIU6U" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session21.jpg" alt="Equilibrio Session 21 - XLR8">
+            </div>
+            <div class="session-info">
+              <span>SESSION #21</span>
+              <h3>XLR8</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://youtube.com/@equilibrio.records" target="_blank" rel="noopener noreferrer">
+          <article class="session-card">
+            <div class="session-image">
+              <img src="imagen/session22.jpg" alt="Equilibrio Session 22 - Pedro Sanmartin">
+            </div>
+            <div class="session-info">
+              <span>SESSION #22</span>
+              <h3>Pedro Sanmartin</h3>
+              <p>Equilibrio Sessions</p>
+            </div>
+          </article>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISTS -->
+  <section class="section dark-section fade-in" id="artists">
+    <div class="section-number">05</div>
+
+    <div class="section-content">
+      <p class="section-label" data-i18n="artists_label">COMMUNITY</p>
+      <div class="artists-header">
+        <h2 class="artists-toggle" id="artistsToggle" role="button" tabindex="0" aria-expanded="false" aria-controls="artistsPanel"><span data-i18n="artists_title">Artists</span> <span class="toggle-icon">+</span></h2>
+        <div class="esoteric-orb" aria-hidden="true">
+          <svg viewBox="0 0 100 100" class="esoteric-svg">
+            <!-- Outer ring -->
+            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.5"/>
+            <!-- Middle ring -->
+            <circle cx="50" cy="50" r="34" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.7"/>
+            <!-- Inner ring -->
+            <circle cx="50" cy="50" r="18" fill="none" stroke="url(#goldGrad)" stroke-width="0.7"/>
+            <!-- Hexagon -->
+            <polygon points="50,12 83,31 83,69 50,88 17,69 17,31" fill="none" stroke="url(#goldGrad)" stroke-width="0.55" opacity="0.8"/>
+            <!-- Diamond / balance -->
+            <polygon points="50,22 68,50 50,78 32,50" fill="none" stroke="url(#goldGrad)" stroke-width="0.6"/>
+            <!-- Center point -->
+            <circle cx="50" cy="50" r="3.5" fill="#d4af37" opacity="0.9"/>
+            <circle cx="50" cy="50" r="1.5" fill="#f5e6b8"/>
+            <!-- Rays -->
+            <line x1="50" y1="4" x2="50" y2="14" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+            <line x1="50" y1="86" x2="50" y2="96" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+            <line x1="4" y1="50" x2="14" y2="50" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+            <line x1="86" y1="50" x2="96" y2="50" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f5e6b8"/>
+                <stop offset="50%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#a67c2d"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="artists-panel" id="artistsPanel">
+                <div class="artist-grid">
+          <div class="artist-name" data-img="imagen/AlainM.jpg" data-name="Alain M.">Alain M.</div>
+          <div class="artist-name" data-img="imagen/Apocrypha%20(AR).jpg" data-name="Apocrypha (AR)">Apocrypha (AR)</div>
+          <div class="artist-name" data-img="imagen/ArunK.jpg" data-name="Arun K">Arun K</div>
+          <div class="artist-name" data-img="imagen/Axelara.jpg" data-name="AxeLara">AxeLara</div>
+          <div class="artist-name" data-img="imagen/Ben-Monday.jpg" data-name="Ben Monday">Ben Monday</div>
+          <div class="artist-name" data-img="imagen/BiGz.jpg" data-name="BiGz">BiGz</div>
+          <div class="artist-name" data-img="imagen/Bj%C3%B6rn%20Salvador.jpg" data-name="Bjorn Salvador">Bjorn Salvador</div>
+          <div class="artist-name" data-img="imagen/bonsai-AR.jpg" data-name="Bonsai (AR)">Bonsai (AR)</div>
+          <div class="artist-name" data-img="imagen/boraa.jpg" data-name="Boraa">Boraa</div>
+          <div class="artist-name">Brian David</div>
+          <div class="artist-name">Casnik</div>
+          <div class="artist-name">Coloü Befu</div>
+          <div class="artist-name">Delmoro (AR)</div>
+          <div class="artist-name">DJ Lemy</div>
+          <div class="artist-name">DJ Leoni</div>
+          <div class="artist-name">Dr Pius</div>
+          <div class="artist-name">Emotional Tourist</div>
+          <div class="artist-name">Erich Von Kollar</div>
+          <div class="artist-name">Fabson</div>
+          <div class="artist-name">Fabricio Gutiérrez</div>
+          <div class="artist-name">Facundo Nadra</div>
+          <div class="artist-name">Federico Monachesi</div>
+          <div class="artist-name">Fer Mora</div>
+          <div class="artist-name">Fleanger</div>
+          <div class="artist-name">Ghume</div>
+          <div class="artist-name">Gonza Ponce</div>
+          <div class="artist-name">Grisel Esquivel</div>
+          <div class="artist-name">Hook Airs</div>
+          <div class="artist-name">Ignacio Salgado</div>
+          <div class="artist-name">IVANG (ES)</div>
+          <div class="artist-name" data-img="imagen/ivan-akselman.jpg" data-name="Iván Akselman">Iván Akselman</div>
+          <div class="artist-name">J.FIZ</div>
+          <div class="artist-name">Jess Cobos</div>
+          <div class="artist-name">Jhonatan Ghersi</div>
+          <div class="artist-name">J.P. Velardi</div>
+          <div class="artist-name">Juan Beldarrein</div>
+          <div class="artist-name">Juan Domecq</div>
+          <div class="artist-name">Just Sleep</div>
+          <div class="artist-name">KarlRussell</div>
+          <div class="artist-name">Lala Leuwers</div>
+          <div class="artist-name">Lenz</div>
+          <div class="artist-name">Levi</div>
+          <div class="artist-name">Lucas Pietra</div>
+          <div class="artist-name">Marcos Calegari</div>
+          <div class="artist-name">Mario Puccio</div>
+          <div class="artist-name">Mati Guarnaccia</div>
+          <div class="artist-name">Matías Delóngaro</div>
+          <div class="artist-name">Mauro Masi</div>
+          <div class="artist-name" data-img="imagen/miguel-ante.jpg" data-name="Miguel Ante">Miguel Ante</div>
+          <div class="artist-name">Missfeat</div>
+          <div class="artist-name">Monojoke</div>
+          <div class="artist-name">Nantiel</div>
+          <div class="artist-name" data-img="imagen/nico-trejo.jpg" data-name="Nico Trejo">Nico Trejo</div>
+          <div class="artist-name">Nicolas Viana</div>
+          <div class="artist-name" data-img="imagen/niko.jpg" data-name="Niko García">Niko García</div>
+          <div class="artist-name">Nina ID</div>
+          <div class="artist-name">Pablo Asturizaga</div>
+          <div class="artist-name" data-img="imagen/parlagreco.jpg" data-name="Parlagreco">Parlagreco</div>
+          <div class="artist-name">Pedro Sanmartin</div>
+          <div class="artist-name" data-img="imagen/pinkowitz.jpg" data-name="Pinkowitz">Pinkowitz</div>
+          <div class="artist-name">Riccardo Leardini</div>
+          <div class="artist-name">Safety Mode</div>
+          <div class="artist-name">Solitary</div>
+          <div class="artist-name">St.Ego</div>
+          <div class="artist-name">Steve Finney</div>
+          <div class="artist-name">T.Picker</div>
+          <div class="artist-name">Toffk</div>
+          <div class="artist-name">Tojogo</div>
+          <div class="artist-name">Travis Jesse</div>
+          <div class="artist-name">Unai Garcia</div>
+          <div class="artist-name">UNALOME</div>
+          <div class="artist-name">Van Vazquez</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL ARTISTA -->
+  <div class="artist-modal" id="artistModal">
+    <div class="artist-modal-content">
+      <button class="artist-modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <img alt="" id="modalImage">
+      <h3 id="modalName"></h3>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact fade-in" id="contact">
+    <p class="section-label" data-i18n="contact_label">CONTACT</p>
+    <h2 data-i18n="contact_title">Let's create something meaningful.</h2>
+    <p data-i18n="contact_text">Demos · Collaborations · Sessions · Press</p>
+    <a href="mailto:equilibriorecs@gmail.com" class="btn btn-primary" data-i18n="contact_btn">Contact Equilibrio</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>© 2026 Equilibrio Records · <a href="privacidad.html" data-i18n="footer_privacy">Privacy</a></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/equilibriorec/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://youtube.com/@equilibrio.records" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.beatport.com/label/equilibrio-records/104263" target="_blank" rel="noopener noreferrer">Beatport</a>
+      <a href="https://soundcloud.com/equilibrio_records" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://bandcamp.com/equilibriorecs" target="_blank" rel="noopener noreferrer">Bandcamp</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+
+</body>
+</html>
