@@ -14,37 +14,56 @@ export default async function handler(req, res) {
       });
     }
 
-    const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": process.env.GEMINI_API_KEY
-        },
-        body: JSON.stringify({
-          system_instruction: {
-            parts: [
-              {
-                text: "Eres Equilibrio AI, el asistente oficial de Equilibrio Records. Equilibrio Records es un sello independiente de música electrónica enfocado en Organic House, Progressive House, Deep House y Downtempo. Hablas con tono elegante, claro y breve. Responde en el mismo idioma del visitante. Preséntate como Equilibrio AI, no como un asistente genérico de Google. Si no sabes algo con certeza, dilo y sugiere consultar la web o escribir a equilibriorecs@gmail.com. No inventes datos privados, contratos, finanzas ni información interna del sello."
-              }
-            ]
-          },
-          contents: [
+    const requestBody = {
+      system_instruction: {
+        parts: [
+          {
+            text: "Eres Equilibrio AI, el asistente oficial de Equilibrio Records. Equilibrio Records es un sello independiente de música electrónica enfocado en Organic House, Progressive House, Deep House y Downtempo. Hablas con tono elegante, claro y breve. Responde en el mismo idioma del visitante. Preséntate como Equilibrio AI, no como un asistente genérico de Google. Si no sabes algo con certeza, dilo y sugiere consultar la web o escribir a equilibriorecs@gmail.com. No inventes datos privados, contratos, finanzas ni información interna del sello."
+          }
+        ]
+      },
+      contents: [
+        {
+          role: "user",
+          parts: [
             {
-              role: "user",
-              parts: [
-                {
-                  text: message
-                }
-              ]
+              text: message
             }
           ]
-        })
-      }
-    );
+        }
+      ]
+    };
 
-    const data = await response.json();
+    let response;
+    let data;
+
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      response = await fetch(
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": process.env.GEMINI_API_KEY
+          },
+          body: JSON.stringify(requestBody)
+        }
+      );
+
+      data = await response.json();
+
+      const busy =
+        response.status === 503 ||
+        data?.error?.code === 503;
+
+      if (!busy) {
+        break;
+      }
+
+      if (attempt < 3) {
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+      }
+    }
 
     if (!response.ok) {
       console.error("Gemini error:", data);
